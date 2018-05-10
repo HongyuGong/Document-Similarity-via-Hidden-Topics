@@ -1,0 +1,21 @@
+Mapping system via hidden topics
+
+Implemented by Hongyu Gong (hgong6@illinois.edu)
+
+This is a system implemented in python for matching long documents (abstracts from reviewers' publications) and short documents (abstract from the submission).
+
+Required package:
+a) gensim
+b) sklearn
+c) nltk
+
+
+1. Input data format
+raw_short_docs: a list of strings where each string is the abstract of a submission;
+raw_long_docs: a list of strings where each string is the concatenation of abstracts from reviewers' publications;
+
+
+2. Run main.py
+Set hyperparameters properly (the default parameters are what we used in the mapping project);
+The function mapping() in main.py will return a score matrix, and the (i,j)-th entry in the matrix is the matching score of the i-th submission and the j-th reviewer. Note that the score is a real value between 0 and 1. The higher the score is, the better they match each other.
+
