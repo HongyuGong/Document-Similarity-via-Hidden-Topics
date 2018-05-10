@@ -1,9 +1,27 @@
 This is the repository for paper "Document Similarity for Texts of Varying Lengths via Hidden Topics" to appear in ACL 2018.
+This is a system implemented by Hongyu Gong in python for matching long documents and short documents (e.g. summary).
 
+Structure:
 src/ is the source code of the document matching system.
-concept-project-mapping-dataset/ prepares the data for the task of concept-project matching.
+concept-project-mapping-dataset/ prepares the data for the task of concept-project matching.=
 
-Furthermore, we also provide science-domain corpara extracted from the WikiCorpus:
+
+Required package:
+a) gensim
+b) sklearn
+c) nltk
+1. Input data format
+raw_short_docs: a list of strings where each string is the abstract;
+raw_long_docs: a list of strings where each string is a long document;
+
+2. Run main.py
+Set hyperparameters properly (the default parameters are what we used in the paper);
+Specify the path of word embeddings.
+The function mapping() in main.py will return a score matrix, and the (i,j)-th entry in the matrix is the matching score of the i-th short document and the j-th long document. 
+Note that the score is a real value between 0 and 1. The higher the score is, the better they match each other.
+
+
+Furthermore, we provide science-domain corpara extracted from the WikiCorpus, which are used to train science-domain embeddings:
 (1) [science_corpus_d2](https://drive.google.com/open?id=1BIyKO9xMqpNOO7EordP9_kS0Zr2tIiNx): a refined corpus of 90 MB consists of documents within depth of 2 in science categories;
 (2) [science_corpus_d3](https://drive.google.com/open?id=1xsJymoKZi2Fr2SCTDwSJzZid13Lp7PO4): a larger corpus of 2GB consists of documents within depth of 3 in science categories.
 
