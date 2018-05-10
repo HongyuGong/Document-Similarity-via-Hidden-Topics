@@ -4,8 +4,8 @@ src/ is the source code of the document matching system.
 concept-project-mapping-dataset/ prepares the data for the task of concept-project matching.
 
 Furthermore, we also provide science-domain corpara extracted from the WikiCorpus:
-(1) [science_corpus_d2][https://drive.google.com/open?id=1BIyKO9xMqpNOO7EordP9_kS0Zr2tIiNx]: a refined corpus of 90 MB consists of documents within depth of 2 in science categories;
-(2) [science_corpus_d3][https://drive.google.com/open?id=1xsJymoKZi2Fr2SCTDwSJzZid13Lp7PO4]: a larger corpus of 2GB consists of documents within depth of 3 in science categories.
+(1) [science_corpus_d2](https://drive.google.com/open?id=1BIyKO9xMqpNOO7EordP9_kS0Zr2tIiNx): a refined corpus of 90 MB consists of documents within depth of 2 in science categories;
+(2) [science_corpus_d3](https://drive.google.com/open?id=1xsJymoKZi2Fr2SCTDwSJzZid13Lp7PO4): a larger corpus of 2GB consists of documents within depth of 3 in science categories.
 
 If you have any questions, please contact Hongyu Gong (hgong6@illinois.edu).
 If you use our code/data, please cite our work.
