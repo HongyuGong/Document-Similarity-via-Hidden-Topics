@@ -26,4 +26,14 @@ Furthermore, we provide science-domain corpara extracted from the WikiCorpus, wh
 (2) [science_corpus_d3](https://drive.google.com/open?id=1xsJymoKZi2Fr2SCTDwSJzZid13Lp7PO4): a larger corpus of 2GB consists of documents within depth of 3 in science categories.
 
 If you have any questions, please contact Hongyu Gong (hgong6@illinois.edu).
-If you use our code/data, please cite our work.
+
+If you use our code/data, please cite our work:
+Hongyu Gong, Tarek Sakakini, Suma Bhat and Jinjun Xiong, “Document Similarity for Texts of Varying Lengths via Hidden Topics”, accepted by the 56th Annual Meeting of the Association for Computational Linguistics (ACL), 2018.
+@inproceedings{docsim,
+  author    = {Hongyu Gong, Tarek Sakakini, Suma Bhat and Jinjun Xiong},
+  title     = {Document Similarity for Texts of Varying Lengths via Hidden Topics},
+  booktitle = {the 56th Annual Meeting of the Association for Computational Linguistics (ACL)},
+  month     = {July},
+  year      = {2018},
+  publisher = {Association for Computational Linguistics}
+}
