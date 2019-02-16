@@ -15,10 +15,13 @@ raw_short_docs: a list of strings where each string is the abstract;
 raw_long_docs: a list of strings where each string is a long document;
 
 2. Run main.py
-Set hyperparameters properly (the default parameters are what we used in the paper);
-Specify the path of word embeddings.
-The function mapping() in main.py will return a score matrix, and the (i,j)-th entry in the matrix is the matching score of the i-th short document and the j-th long document. 
+- Set hyperparameters properly (the default parameters are what we used in the paper);
+- Specify the path of word embeddings.
+- You need to write function to read data into specified format. You can refer to the function readData()in test.py.
+Return: The function mapping() in main.py will return a score matrix, and the (i,j)-th entry in the matrix is the matching score of the i-th short document and the j-th long document. 
 Note that the score is a real value between 0 and 1. The higher the score is, the better they match each other.
+
+<b> Note that you can run test.py which returns matching scores for the project-concept pairs.</b>
 
 
 Furthermore, we provide science-domain corpara extracted from the WikiCorpus, which are used to train science-domain embeddings:
