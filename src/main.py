@@ -71,9 +71,9 @@ def mapping(embedding_path, raw_short_docs, raw_long_docs, topic_num=10, \
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--embedding_path', type=str, default="../src/data/gold_d3_word2vec_model.txt")
-    parser.add_argument('--binary_embedding', type=bool, default=False)
-    parser.add_argument('--is_refine_short', type=bool, default=False)
-    parser.add_argument('--is_refine_long', type=bool, default=False)
+    parser.add_argument('--binary_embedding', default=False, action='store_true')
+    parser.add_argument('--is_refine_short', default=False, action='store_true')
+    parser.add_argument('--is_refine_long', default=False, action='store_true')
     parser.add_argument('--short_word_limit', type=int, default=100)
     parser.add_argument('--long_word_limit', type=int, default=1000)
     parser.add_argument('--topic_num', type=int, default=10)
